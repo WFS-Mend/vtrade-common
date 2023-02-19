@@ -1,0 +1,13 @@
+name: Mend UA Release Scan
+
+on:
+  push:
+    branches:
+    - '**release**'
+
+jobs:
+  call-java-prioritize:
+    uses: WFS-MEND/whitesource-config/.github/workflows/java_prioritize.yml@main
+    with:
+      mvn-cmd: 'mvn deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/${{github.repository}}'
+    secrets: inherit
