@@ -1,4 +1,10 @@
 {
-  "settingsInheritedFrom": "WFS-Mend/whitesource-config@main"
+  "settingsInheritedFrom": "WFS-Mend/whitesource-config@main",
+    "remediateSettings": {
+    "workflowRules": {
+      "enabled": true,
+      "minVulnerabilitySeverity": "HIGH"
+    },
+    "extends": ["github>whitesource/merge-confidence:beta"]
+  }
 }
-
