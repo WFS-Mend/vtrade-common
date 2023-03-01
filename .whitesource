@@ -1,5 +1,8 @@
 {
   "settingsInheritedFrom": "WFS-Mend/whitesource-config@main",
+    "issueSettings": {
+    "minSeverityLevel": "LOW"
+  },
     "remediateSettings": {
     "workflowRules": {
       "enabled": true,
