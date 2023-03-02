@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-java-prioritize:
-    uses: WFS-Mend/whitesource-config/.github/workflows/java_prioritize.yml@main
+    uses: WFS-Mend/whitesource-config/.github/workflows/maven_prioritize.yml@main
     with:
       mvn-cmd: 'mvn deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/${{github.repository}}'
     secrets: inherit
